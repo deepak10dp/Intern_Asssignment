@@ -1,0 +1,129 @@
+/* CardSelectionPage.css */
+
+/* Base styles */
+.card-selection-page {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+}
+
+.cards-container {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ max-width: 900px;
+ margin-bottom: 20px;
+ padding: 0 20px;
+}
+h1 {
+ font-size: 38px!important; 
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+.back-button{
+    font-size:medium;
+}
+
+.card {
+ width: 250px;
+ height: 300px;
+ border: 1px solid #ccc;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 10px;
+ cursor: pointer;
+ overflow: hidden;
+ box-shadow: 2px 3px 8px gray;
+}
+
+.card img {
+ width: 100%;
+ height: auto;
+ object-fit: cover;
+}
+
+.card.selected {
+ border-color: rgb(224,33,138);
+ border-width: 2.5px;
+}
+
+.submit-button {
+ background-color: rgb(224,33,138);
+ color: white;
+ border: none;
+ border-radius: 5px;
+ padding: 5px 10px;
+ cursor: pointer;
+ width: 200px;
+ height: 40px;
+}
+
+.multiple-select{
+    font-weight: 500 !important;
+}
+
+.animation-text{
+    justify-content: center;
+    text-align: center;
+    color:gray;
+}
+.card p {
+ text-align: center; /* Centers the text horizontally */
+ font-style: normal;
+ justify-content: center;
+ font-weight: bold;
+}
+
+.card {
+ position: relative;
+}
+
+.animation-text {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ transform: translateY(-100%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(255, 255, 255, 0.8);
+ padding: 10px;
+ text-align: center;
+ color:gray;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+ .cards-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards horizontally */
+    max-width: 100%; /* Allow cards to take full width */
+ }
+
+ .card {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add margin between cards */
+ }
+
+ .submit-button {
+    width: 100%; /* Full width on smaller screens */
+ }
+
+ .back-button {
+    position: static; /* Position it statically on smaller screens */
+    margin-bottom: 20px;
+    font-size: small; /* Add margin below the back button */
+ }
+
+ .multiple-select {
+    text-align: center; /* Center the text on smaller screens */
+ }
+
+ .back {
+    text-align: center; /* Center the text on smaller screens */
+ }
+}

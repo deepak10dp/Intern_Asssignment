@@ -1,0 +1,194 @@
+/* Navbar Container */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #f8f9fa;
+ padding: 10px;
+ width: 100%;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+ display: none;
+ cursor: pointer;
+}
+
+.navbar-toggler-icon {
+ display: block;
+ width: 30px;
+ height: 3px;
+ background-color: #333;
+ position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #333;
+}
+
+.navbar-toggler-icon::before {
+ top: -10px;
+}
+
+.navbar-toggler-icon::after {
+ bottom: -10px;
+}
+
+/* Navbar Content */
+.navbar-content {
+ display: none;
+}
+
+.navbar-content.open {
+ display: block;
+}
+
+/* Navbar List */
+.navbar-nav {
+ display: flex;
+ flex-direction: row;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+/* Navbar Item */
+.nav-item {
+ margin-right: 20px;
+}
+
+/* Navbar Link */
+.nav-link {
+ text-decoration: none;
+ color: #333;
+}
+
+.nav-link:hover {
+ color: rgb(224,33,138);
+}
+
+/* Email Verification Message */
+.email-verification-message {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.email-verification-message img {
+ margin-top: -17px;
+ width: 150px;
+ height: 140px;
+}
+
+.top-text {
+ font-size: 38px;
+ font-weight: bolder;
+}
+
+.Brand {
+ color: rgb(224,33,138);
+ text-decoration: none;
+}
+
+.email-verify {
+ color: grey;
+ font-weight: 400;
+}
+
+.Email-address {
+ font-weight: bolder;
+}
+
+.email-verify1 a {
+ text-decoration: none;
+ color: rgb(224,33,138);
+ font-weight: bold;
+}
+
+.email-verify2 a {
+ text-decoration: none;
+ color: rgb(224,33,138);
+ font-weight: bold;
+}
+
+.email-verify1 {
+ color: grey;
+ font-weight: 400;
+ margin-top: 30px;
+}
+
+.email-verify2 {
+ color: grey;
+ font-weight: 400;
+ margin-top: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+ display: flex;
+ align-items: center;
+ border-color: black;
+ border-radius: 5px;
+}
+
+.search-bar input {
+ padding: 5px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+
+.search-icon {
+ margin-left: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+ .navbar-nav {
+    flex-direction: column;
+ }
+
+ .nav-item {
+    margin-bottom: 10px;
+ }
+
+ .search-bar {
+    width: 100%;
+    justify-content: center;
+ }
+
+ .search-bar input {
+    width: 80%;
+ }
+
+ .navbar-toggler {
+    display: block;
+ }
+
+ .navbar-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+ }
+
+ .navbar-content.open {
+    display: flex;
+ }
+}
+
+/* Large Screen Navbar */
+.large-screen .navbar-toggler {
+ display: none;
+}
+
+.large-screen .navbar-content {
+ display: flex;
+ position: static;
+}

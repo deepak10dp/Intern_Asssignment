@@ -1,0 +1,141 @@
+.welcome-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: left;
+ 
+ 
+ min-height: 100vh;
+ padding: 20px;
+}
+
+.back-button {
+ position: absolute;
+ font-weight: bold;
+background-color: #efdede;
+border:none;
+ top: 10px;
+ left: 10px;
+ background: none;
+ 
+ font-size: 40px;
+ cursor: pointer;
+}
+
+h1 {
+ font-size: 45px;
+ font-weight: bold;
+ margin-bottom: 50px;
+}
+
+p {
+ margin-top: 10px;
+}
+.choose-image{
+    font-weight: 600;
+}
+
+.content-container{
+    width: 30%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    /* This centers the children horizontally */
+   
+   
+}
+
+.avatar-upload {
+ display: flex;
+ 
+ margin-top: 20px;
+}
+
+.avatar-label {
+ display: flex;
+ 
+ cursor: pointer;
+}
+
+.bold-text {
+ font-weight: bolder;
+ 
+ margin-right: 10px;
+}
+
+.avatar-input {
+ display: none;
+ font-size: larger;
+}
+
+.location-input {
+ margin-top: 20px;
+ font-weight: bolder;
+ border: none;
+ }
+ #location{
+    border: none;
+    margin-left: 5px;
+
+ }
+
+.submit-button {
+ background-color: rgb(224,33,138);
+ color: white;
+ border: none;
+ border-radius: 10px;
+ padding: 6px 30px !important;
+ cursor: pointer;
+ width:40%;
+ margin-top: 20px;
+ box-shadow: 2px 3px 8px grey;
+ 
+
+}
+
+.avatar-preview-container {
+ display: flex;
+ /* Centers the avatar preview or placeholder */
+ align-items: center;
+ margin-top: 20px;
+}
+
+.avatar-preview {
+ max-width: 100px;
+ max-height: 100px;
+ border-radius: 50%; /* Makes the image circular */
+ border: 2px solid black; /* Adds a black border */
+ 
+}
+
+.avatar-placeholder {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%; /* Makes the placeholder circular */
+ border: 2px solid black; /* Adds a black border */
+ background-color: #f0f0f0; /* Light grey background */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;
+ box-shadow: 2px 3px 9px grey;
+ color: #999;
+}
+
+.location-input {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ margin-top: 20px;
+}
+
+#location {
+ border: none; /* Ensures no border is applied */
+ border-bottom: 2px solid gray; /* Adds a bottom border */
+ padding: 5px 0; /* Adjusts padding to ensure text is not too close to the underline */
+}
+.back{
+    font-size: small;
+    margin-top: 10px;
+}

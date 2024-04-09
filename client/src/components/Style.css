@@ -1,0 +1,113 @@
+/* General styles */
+.container {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ text-align:left ;
+ align-items: center;
+ height: 100vh; /* Full viewport height */
+ margin: 0; /* Reset margin */
+ padding: 0; /* Reset padding */
+ gap: 130px;
+}
+
+/* Image container */
+.image-container {
+ width: 100%; /* Image covers 30% of the screen */
+ height: 100%;
+ overflow: hidden; /* Ensure the image does not overflow the container */
+ position: relative; /* Added for positioning the image */
+}
+
+.image-container img {
+ width: 100%; /* Adjusted to ensure the image covers the container */
+ height: 100%; /* Adjusted to ensure the image covers the container */
+ object-fit: cover; /* Cover the container without distorting the aspect ratio */
+ object-position: center; /* Center the image within the container */
+ display: block; /* Ensure the image is displayed as a block element */
+}
+
+/* Form container */
+.form-container {
+ width: 70%; /* Form takes up the remaining 70% of the screen */
+ padding: 20px; /* Add some padding around the form */
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+
+/* Form labels and inputs */
+.form-label {
+ text-align: left;
+ display: block;
+ margin-top: 35px;
+ font-weight: bold;
+}
+
+/* Checkbox and its label */
+.checkbox-container {
+ display: flex;
+ align-items: center;
+ font-weight: light;
+}
+
+.checkbox-container input[type=checkbox] {
+ flex: none; /* Prevent the checkbox from growing */
+ margin-right: 10px; /* Space between the checkbox and the text */
+ margin-top: -40px;
+}
+
+.form-control {
+ width: 100%;
+ padding: 8px;
+ border: 2px solid #ccc;
+ border-radius: 8px;
+}
+
+/* Name and username fields */
+.name-username-container {
+ display: flex;
+ justify-content: space-between;
+ gap: 10px;
+ margin-bottom: -13px;
+}
+
+/* Submit button */
+.btn-success {
+ background-color: rgb(224,33,138) !important;
+ color: black;
+ padding: 5px 10px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: bold;
+ overflow: hidden;
+}
+
+/* Styling for links within the checkbox label */
+.checkbox-container a {
+    color: blue;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+ .container {
+    flex-direction: column;
+ }
+ .image-container, .form-container {
+    width: 100%;
+ }
+}
+.checkbox-container a {
+    color: blue;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
